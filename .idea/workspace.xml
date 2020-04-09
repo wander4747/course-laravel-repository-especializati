@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bdaef64-32cf-47bc-b6b1-8f1d36c00287" name="Default Changelist" comment="" />
+    <list default="true" id="4bdaef64-32cf-47bc-b6b1-8f1d36c00287" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Contracts/ProductRepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Core/Eloquent/EloquentProductRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/repository.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/repository.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +22,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -113,9 +126,13 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
       <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
       <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
     </include_path>
   </component>
   <component name="ProjectId" id="1aFzDH2OapbrVLsPuEZcvdhumOl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -123,6 +140,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.PHP" />
@@ -145,6 +163,7 @@
       <updated>1586346008806</updated>
       <workItem from="1586346012684" duration="500000" />
       <workItem from="1586346704441" duration="1211000" />
+      <workItem from="1586442529004" duration="4183000" />
     </task>
     <servers />
   </component>
@@ -152,17 +171,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1779" y="-113" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586447623394">
+      <screen x="1366" y="-232" width="1366" height="728" />
+    </state>
+    <state x="1779" y="-113" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.-232.1366.728@1366.-232.1366.728" timestamp="1586447623394" />
     <state x="1829" y="-127" key="FileChooserDialogImpl" timestamp="1586347749502">
       <screen x="1366" y="-232" width="1366" height="728" />
     </state>
     <state x="1829" y="-127" key="FileChooserDialogImpl/0.0.1366.728/1366.-232.1366.728@1366.-232.1366.728" timestamp="1586347749502" />
+    <state x="1772" y="-54" key="NewPhpClassDialog" timestamp="1586443480878">
+      <screen x="1366" y="-232" width="1366" height="728" />
+    </state>
+    <state x="1772" y="-54" key="NewPhpClassDialog/0.0.1366.728/1366.-232.1366.728@1366.-232.1366.728" timestamp="1586443480878" />
     <state x="1552" y="-223" key="SettingsEditor" timestamp="1586347906941">
       <screen x="1366" y="-232" width="1366" height="728" />
     </state>
     <state x="1552" y="-223" key="SettingsEditor/0.0.1366.728/1366.-232.1366.728@1366.-232.1366.728" timestamp="1586347906941" />
-    <state x="1766" y="6" key="com.intellij.ide.util.TipDialog" timestamp="1586346705358">
+    <state x="1766" y="6" key="com.intellij.ide.util.TipDialog" timestamp="1586442529023">
       <screen x="1366" y="-232" width="1366" height="728" />
     </state>
-    <state x="1766" y="6" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.-232.1366.728@1366.-232.1366.728" timestamp="1586346705358" />
+    <state x="1766" y="6" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.-232.1366.728@1366.-232.1366.728" timestamp="1586442529023" />
   </component>
 </project>
