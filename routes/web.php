@@ -2,24 +2,25 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('amin', function () {
-    return view('welcome');
-})->name('admin');
-
-Route::any('admin/categories/search', 'Admin\CategoryController@search')->name('categories.search');
-Route::any('admin/products/search', 'Admin\ProductController@search')->name('products.search');
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth'], function () {
 
 
-Route::resource('admin/categories', 'Admin\CategoryController');
-Route::resource('admin/products', 'Admin\ProductController');
+    Route::any('categories/search', 'CategoryController@search')->name('categories.search');
+    Route::any('products/search', 'ProductController@search')->name('products.search');
+    Route::any('users/search', 'UserController@search')->name('users.search');
+
+
+    Route::resource('categories', 'CategoryController');
+    Route::resource('products', 'ProductController');
+    Route::resource('users', 'UserController');
+
+    Route::get('/', 'DashboardController@index')->name('admin');
+});
+
+
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
-
-Route::get('/home', function() {
-    return view('home');
-})->name('home')->middleware('auth');
-
+Auth::routes(['register' => false]);

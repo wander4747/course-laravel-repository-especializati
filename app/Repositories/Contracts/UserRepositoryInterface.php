@@ -3,9 +3,11 @@
 
 namespace App\Repositories\Contracts;
 
+
 use Illuminate\Http\Request;
 
-interface ProductRepositoryInterface
+interface UserRepositoryInterface
 {
+
     public function search(Request $request);
 }

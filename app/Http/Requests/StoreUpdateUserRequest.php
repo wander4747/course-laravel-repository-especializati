@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreUpdateCategoryFormRequest extends FormRequest
+class StoreUpdateUserRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,10 +25,15 @@ class StoreUpdateCategoryFormRequest extends FormRequest
     {
         $id = $this->segment(3);
 
-        return [
-            'title' => "required|min:3|max:60|unique:categories,title,{$id},id",
-            //'url' => "required|min:3|max:60|unique:categories,url,{$id},id",
-            'description' => 'max:2000',
+        $rules =  [
+            'name'          => "required|min:3|max:60",
+            'email'         => "required|email|min:3|max:100|unique:users,email,{$id},id",
+            'password'      => "required|min:3|max:15"
         ];
+
+        if ($this->method('PUT')) {
+            $rules['password'] = "max:15";
+        }
+        return $rules;
     }
 }

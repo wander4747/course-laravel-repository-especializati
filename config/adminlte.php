@@ -30,8 +30,8 @@ return [
     |
     */
 
-    'use_ico_only' => false,
-    'use_full_favicon' => false,
+    'use_ico_only' => true,
+    'use_full_favicon' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -209,17 +209,24 @@ return [
 
     'menu' => [
         [
-            'text' => 'search',
-            'search' => true,
-            'topnav' => true,
+            'text' => 'Dashboard',
+            'url'  => 'admin/dashboard',
+            'icon' => 'fas fa-chart-line'
         ],
         [
             'text' => 'Category',
             'url'  => 'admin/categories',
+            'icon' => 'fas fa-list'
         ],
         [
             'text' => 'Products',
             'url'  => 'admin/products',
+            'icon' => 'fas fa-tasks'
+        ],
+        [
+            'text' => 'Users',
+            'url'  => 'admin/users',
+            'icon' => 'fas fa-users'
         ]
     ],
 

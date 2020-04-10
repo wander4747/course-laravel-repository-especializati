@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bdaef64-32cf-47bc-b6b1-8f1d36c00287" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Contracts/ProductRepositoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Core/Eloquent/EloquentProductRepository.php" afterDir="false" />
+    <list default="true" id="4bdaef64-32cf-47bc-b6b1-8f1d36c00287" name="Default Changelist" comment="Repository Donw">
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Contracts/UserRepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/repository.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/repository.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StoreUpdateCategoryFormRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/StoreUpdateCategoryFormRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Contracts/CategoryRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Contracts/CategoryRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Contracts/ProductRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Contracts/ProductRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Contracts/RepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Contracts/RepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Core/BaseEloquentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Core/BaseEloquentRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Core/BaseQueryBuilderRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Core/BaseQueryBuilderRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Core/Eloquent/EloquentCategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Core/Eloquent/EloquentCategoryRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Core/Eloquent/EloquentProductRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Core/Eloquent/EloquentProductRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Core/QueryBuilder/QueryBuilderCategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Core/QueryBuilder/QueryBuilderCategoryRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Exceptions/PropertyTableNotExists.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Exceptions/PropertyTableNotExists.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/adminlte.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/adminlte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/_partials/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/_partials/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/includes/alerts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/includes/alerts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +144,9 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
       <path value="$PROJECT_DIR$/vendor/sebastian/type" />
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
     </include_path>
   </component>
   <component name="ProjectId" id="1aFzDH2OapbrVLsPuEZcvdhumOl" />
@@ -163,33 +183,61 @@
       <updated>1586346008806</updated>
       <workItem from="1586346012684" duration="500000" />
       <workItem from="1586346704441" duration="1211000" />
-      <workItem from="1586442529004" duration="4183000" />
+      <workItem from="1586442529004" duration="4379000" />
+      <workItem from="1586448415970" duration="1378000" />
+      <workItem from="1586460986665" duration="9865000" />
+      <workItem from="1586535133655" duration="7403000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Repository Donw" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repository Donw" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="1779" y="-113" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586447623394">
-      <screen x="1366" y="-232" width="1366" height="728" />
+    <state x="1803" y="58" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586540244993">
+      <screen x="1366" y="58" width="1366" height="728" />
     </state>
-    <state x="1779" y="-113" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.-232.1366.728@1366.-232.1366.728" timestamp="1586447623394" />
+    <state x="1803" y="-232" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/1366.-232.1366.728@1366.-232.1366.728" timestamp="1586466688018" />
+    <state x="1803" y="58" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/1366.58.1366.728@1366.58.1366.728" timestamp="1586540244993" />
+    <state x="1779" y="177" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586540197883">
+      <screen x="1366" y="58" width="1366" height="728" />
+    </state>
+    <state x="1779" y="-113" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.-232.1366.728@1366.-232.1366.728" timestamp="1586466880315" />
+    <state x="1779" y="177" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.58.1366.728@1366.58.1366.728" timestamp="1586540197883" />
+    <state x="1674" y="58" key="CommitChangelistDialog2" timestamp="1586536841169">
+      <screen x="1366" y="58" width="1366" height="728" />
+    </state>
+    <state x="1674" y="58" key="CommitChangelistDialog2/0.0.1366.728/1366.58.1366.728@1366.58.1366.728" timestamp="1586536841169" />
     <state x="1829" y="-127" key="FileChooserDialogImpl" timestamp="1586347749502">
       <screen x="1366" y="-232" width="1366" height="728" />
     </state>
     <state x="1829" y="-127" key="FileChooserDialogImpl/0.0.1366.728/1366.-232.1366.728@1366.-232.1366.728" timestamp="1586347749502" />
-    <state x="1772" y="-54" key="NewPhpClassDialog" timestamp="1586443480878">
-      <screen x="1366" y="-232" width="1366" height="728" />
+    <state x="1772" y="236" key="NewPhpClassDialog" timestamp="1586541237069">
+      <screen x="1366" y="58" width="1366" height="728" />
     </state>
-    <state x="1772" y="-54" key="NewPhpClassDialog/0.0.1366.728/1366.-232.1366.728@1366.-232.1366.728" timestamp="1586443480878" />
+    <state x="1772" y="-54" key="NewPhpClassDialog/0.0.1366.728/1366.-232.1366.728@1366.-232.1366.728" timestamp="1586466800569" />
+    <state x="1772" y="236" key="NewPhpClassDialog/0.0.1366.728/1366.58.1366.728@1366.58.1366.728" timestamp="1586541237069" />
+    <state x="1884" y="345" key="NewPhpFileDialog" timestamp="1586539352243">
+      <screen x="1366" y="58" width="1366" height="728" />
+    </state>
+    <state x="1884" y="55" key="NewPhpFileDialog/0.0.1366.728/1366.-232.1366.728@1366.-232.1366.728" timestamp="1586449501422" />
+    <state x="1884" y="345" key="NewPhpFileDialog/0.0.1366.728/1366.58.1366.728@1366.58.1366.728" timestamp="1586539352243" />
     <state x="1552" y="-223" key="SettingsEditor" timestamp="1586347906941">
       <screen x="1366" y="-232" width="1366" height="728" />
     </state>
     <state x="1552" y="-223" key="SettingsEditor/0.0.1366.728/1366.-232.1366.728@1366.-232.1366.728" timestamp="1586347906941" />
-    <state x="1766" y="6" key="com.intellij.ide.util.TipDialog" timestamp="1586442529023">
+    <state x="1766" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1586535135715">
+      <screen x="1366" y="58" width="1366" height="728" />
+    </state>
+    <state x="1766" y="6" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.-232.1366.728@1366.-232.1366.728" timestamp="1586460997484" />
+    <state x="1766" y="296" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.58.1366.728@1366.58.1366.728" timestamp="1586535135715" />
+    <state x="1746" y="-232" width="606" height="728" key="find.popup" timestamp="1586470213432">
       <screen x="1366" y="-232" width="1366" height="728" />
     </state>
-    <state x="1766" y="6" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.-232.1366.728@1366.-232.1366.728" timestamp="1586442529023" />
+    <state x="1746" y="-232" width="606" height="728" key="find.popup/0.0.1366.728/1366.-232.1366.728@1366.-232.1366.728" timestamp="1586470213432" />
   </component>
 </project>

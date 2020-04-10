@@ -24,7 +24,10 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = $this->repository->paginate();
+        $products = $this->repository
+                            ->relationships('category')
+                            ->orderBy('id')
+                            ->paginate();
         return view('admin.products.index', compact('products'));
     }
 
@@ -46,11 +49,6 @@ class ProductController extends Controller
      */
     public function store(StoreUpdateProductFormRequest $request)
     {
-        /*METHOD 1
-        $category = Category::find($request->category_id);
-        $product = $category->products()->create($request->all());
-        */
-
         $product = $this->repository->store($request->all());
         return redirect()
                     ->route('products.index')
@@ -123,28 +121,7 @@ class ProductController extends Controller
     {
         $filters = $request->except('_token');
 
-        $products = $this->repository
-                            ->with('category')
-                            ->where(function ($query) use ($request){
-                                if ($request->name) {
-                                    $filter = $request->name;
-
-                                    $query->where(function ($querySub) use ($filter) {
-                                        $querySub->where('name', 'LIKE', "%{$filter}%")
-                                            ->orWhere('description', 'LIKE', "%{$filter}%");
-                                    });
-                                }
-
-                                if ($request->price) {
-                                    $query->where('price', 'LIKE', "%{$request->price}%");
-                                }
-
-                                if ($request->category) {
-                                    $query->orWhere('category_id', $request->category);
-                                }
-
-                            })
-                            ->paginate();
+        $products = $this->repository->search($request);
 
         return view('admin.products.index', compact('products', 'filters'));
     }
